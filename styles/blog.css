@@ -1,0 +1,70 @@
+.cards-blog {
+  margin: auto;
+  max-width: 90%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: rgba(241, 243, 244, 255);
+  width: 100%;
+}
+.img-card {
+  background: url("../imagens/banner.jpg");
+  background-position: right;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+}
+
+.card-text {
+  margin: auto;
+  padding: 0rem 2rem 0rem 2rem;
+}
+.top-title {
+  word-wrap: break-word;
+  text-align: center;
+  margin: 2rem;
+  color: rgb(58, 58, 58);
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card h1 {
+  word-wrap: break-word;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.4rem;
+  margin: 2rem 0px 2rem 0px;
+  color: rgba(51, 51, 51, 255);
+  font-weight: bolder;
+}
+.card p {
+  word-wrap: break-word;
+  font-size: 1.6rem;
+  color: rgba(117, 117, 118, 255);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cards-blog {
+    width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  .card {
+    width: 60%;
+  }
+}
+@media (max-width: 230px) {
+  .card {
+    width: 80vw;
+  }
+}

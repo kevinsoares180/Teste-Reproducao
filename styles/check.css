@@ -1,0 +1,41 @@
+.check-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+.check-content {
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+}
+.check-content h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(51, 51, 51, 255);
+  font-weight: bolder;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.check-content p {
+  word-wrap: break-word;
+  font-size: 1.6rem;
+  text-align: center;
+  color: rgba(117, 117, 118, 255);
+  margin-bottom: 2rem;
+}
+.img-check {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .img-check {
+    width: 30%;
+  }
+}
+@media (max-width: 425px) {
+  .check-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
